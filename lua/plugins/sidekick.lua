@@ -8,5 +8,12 @@ return {
       end,
       desc = "Sidekick Toggle Codex",
     },
+    {
+      "<leader>ao",
+      function()
+        require("sidekick.cli").toggle("opencode")
+      end,
+      desc = "Sidekick Toggle Opencode",
+    },
   },
 }
