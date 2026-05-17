@@ -9,7 +9,7 @@ return {
       desc = "Sidekick Toggle Codex",
     },
     {
-      "<leader>ao",
+      "<leader>as",
       function()
         require("sidekick.cli").toggle("opencode")
       end,
