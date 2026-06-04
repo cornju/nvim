@@ -2,3 +2,8 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 vim.keymap.set("t", "jk", [[<c-\><c-n>]], { desc = "terminal -> Normal" })
+vim.keymap.set("n", "<leader>y", ":%y+<CR>", {
+  noremap = true,
+  silent = true,
+  desc = "Yank entire file to clipboard",
+})
